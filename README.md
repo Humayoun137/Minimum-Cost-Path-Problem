@@ -1,1 +1,4 @@
 # Minimum-Cost-Path-Problem
+
+
+The Minimum Cost Path Problem involves finding the minimum cost to reach the bottom-right corner of a grid from the top-left corner. Each cell in the grid has an associated cost, and you are allowed to move only right or down at each step. Dynamic Programming can be used to solve this problem efficiently. Similar to the Path Count Problem, you can create a 2D array dp where dp[i][j] represents the minimum cost to reach cell (i, j) in the grid. You initialize the first row and first column with the cumulative cost values. Then, for each cell (i, j), you calculate the minimum cost to reach it by considering the cost in the current cell and adding it to the minimum of the costs from the cell above and the cell to the left. The result is stored in dp[n-1][m-1], where n and m are the number of rows and columns respectively. This approach ensures that you find the minimum cost path from the top-left to the bottom-right corner of the grid.
